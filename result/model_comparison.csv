@@ -1,0 +1,4 @@
+Model,Accuracy,Main Result
+Random Forest,0.5298,"Better on class 0, weak on drought classes"
+Balanced Random Forest,0.5276,Little improvement on minority classes
+XGBoost,0.5355,"Slightly higher accuracy, minority classes still weak"
