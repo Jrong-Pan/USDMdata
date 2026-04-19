@@ -11,15 +11,20 @@ Can simple machine learning models such as Random Forest and XGBoost improve dro
 ## Dataset
 This project uses the parent paper dataset `USDMDataAvg.csv` from Dryad.
 
-The dataset is used for drought classification experiments.  
-Because the CSV file is very large, it is not uploaded to this repository.
+Because the CSV file is too large, it is not uploaded to this repository.
 
-Please download the dataset separately and place it in:
+Before running the code:
+
+1. Download `USDMDataAvg.csv` from the Dryad dataset source used by the parent paper.
+2. Create a folder named `data` in the project root directory if it does not already exist.
+3. Place the file in the following path:
 
 data/USDMDataAvg.csv
 
+The code will not run correctly unless the dataset file is placed at `data/USDMDataAvg.csv`.
+
 ## Models
-The current project includes the following models:
+The current project includes the following baseline models:
 
 - Random Forest
 - Balanced Random Forest
@@ -43,7 +48,7 @@ pip install -r requirements.txt
 - `parent_repo_files/`: original files from the parent repository
 - `src/`: project code
 - `result/`: result figures and tables
-- `data/`: local dataset folder (not uploaded)
+- `data/`: local dataset folder (dataset file not uploaded)
 
 ## How to Run
 Run the scripts from the project root directory.
@@ -54,7 +59,7 @@ python src/check_data.py
 python src/rf_baseline.py  
 python src/rf_balanced.py  
 python src/xgb_baseline.py  
-python src/week12_comparison.py
+python src/week12_comparison.py  
 
 ## Notes
 - Make sure the dataset file is placed at `data/USDMDataAvg.csv`
