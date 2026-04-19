@@ -1,7 +1,4 @@
-"""
-Week 12: compare baselines vs imbalance-aware training on the same temporal split
-as rf_baseline / xgb_baseline. Writes metrics and confusion matrices under ./result/.
-"""
+
 from __future__ import annotations
 
 import sys
